@@ -8,8 +8,22 @@
       * {
         margin: 0px;
       }
+      body {
+        height: 100%;
+      }
+
+      /* html {
+        scroll-behavior: smooth;
+      } */
       .container {
+        position: fixed;
+        overflow: auto;
         background-color: white;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        scroll-behavior: smooth;
       }
 
       .row {
@@ -24,7 +38,7 @@
         display: flex;
         justify-content: space-around;
         padding: 20px;
-        height: 500px;
+        height: 100%;
         align-items: center;
       }
 
@@ -33,7 +47,7 @@
         background-color: silver;
         justify-content: space-around;
         padding: 20px;
-        height: 500px;
+        height: 100%;
         align-items: center;
       }
 
@@ -48,6 +62,7 @@
         margin: 10px;
         border-radius: 20px;
       }
+
 
       li {
         display: inline;
@@ -65,6 +80,11 @@
       .imgclass {
         border-radius: 100px;
       }
+
+      .row1 > div {
+        padding:100px
+      }
+      
     </style>
   </head>
   <body>
@@ -84,13 +104,21 @@
 
       <div class="row1" id="home">
         <div>
-          <h1>Praveen Nair</h1>
-          <h3>Full Stack Developer</h3>
+          <h1>Full Stack Developer</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
+            quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
+            perferendis assumenda?
+          </p>
         </div>
-        <div><img class="imgclass" src="https://picsum.photos/id/1/200/200" /></div>
+        <div>
+          <img class="imgclass" src="https://picsum.photos/id/1/200/200" />
+        </div>
       </div>
-
-      <div class="row2" id="projects">
+      <h1>Projects</h1>
+      <div class="row2 height" id="projects">
+       
         <div class="box1">
           <h3>Web App Development</h3>
           <p>
